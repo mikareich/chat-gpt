@@ -47,7 +47,7 @@ export default function MessageList({ params }: MessageListProps) {
       className="flex-1 overflow-y-auto"
       onScroll={handleScroll}
     >
-      <ol ref={listRef} className="flex flex-col gap-6">
+      <ol ref={listRef} className="flex flex-col gap-6 mt-5">
         {messages.map((message) => (
           <li key={message.id}>
             <Message chatId={chatId} {...message} />

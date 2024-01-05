@@ -1,3 +1,4 @@
+import NavBar from "./navbar";
 import Prompt from "./prompt";
 
 export default function ChatLayout({
@@ -6,7 +7,8 @@ export default function ChatLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="container pt-24 pb-10 flex flex-col gap-5 h-full">
+    <main className="container pb-10 flex flex-col h-full">
+      <NavBar />
       {children}
       <Prompt />
     </main>

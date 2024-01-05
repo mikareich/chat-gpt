@@ -12,7 +12,7 @@ export const getAvatar = (role: Message["role"], chatId: string) => {
     case "user":
       return {
         name: "You",
-        image: `https://api.dicebear.com/7.x/avataaars-neutral/svg?seed=${chatId}`,
+        image: `https://avatars.githubusercontent.com/u/1?v=4`,
       };
 
     default:
@@ -22,3 +22,9 @@ export const getAvatar = (role: Message["role"], chatId: string) => {
       };
   }
 };
+
+export const CHAT_MODELS = [
+  "gpt-3.5-turbo-1106",
+  "gpt-3.5-turbo-16k",
+  "gpt-4-1106-preview",
+];

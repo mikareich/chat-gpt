@@ -67,7 +67,7 @@ export default function Prompt() {
   return (
     <Form {...form}>
       <form
-        className="flex gap-4 items-end"
+        className="flex gap-4 items-end mt-5"
         onSubmit={form.handleSubmit(handleSubmit)}
       >
         <FormField
